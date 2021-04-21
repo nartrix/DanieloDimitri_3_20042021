@@ -1,0 +1,16 @@
+/* SECTION LOCATION */
+
+.section-location {
+    width: 100%;
+
+    .content-location {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fas {
+            margin-right: 15px;
+        }
+    }
+}
