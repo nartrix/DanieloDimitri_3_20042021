@@ -4,5 +4,12 @@
 @import 'layout/header';
 @import 'layout/section-location';
 @import 'layout/section-hero';
+@import 'layout/section-operation';
+@import 'layout/section-restaurants';
+@import 'layout/footer';
 
 @import 'components/buttons';
+
+@import 'utilities/function';
+@import 'utilities/mixins';
+@import 'utilities/variables';
