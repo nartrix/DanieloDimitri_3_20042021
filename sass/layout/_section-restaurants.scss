@@ -1,0 +1,76 @@
+/* SECTION RESTAURANT */
+
+.section-restaurant {
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+    h1 {
+        font-family: 'roboto', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .restaurant-cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+
+        .restaurant-card {    
+            margin-bottom: 20px;
+
+            .card-img {
+                
+                img {
+                    width: 100%;
+                    height: 225px;
+                    object-fit: cover;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+            }
+
+            .card-content {
+                height: 70px;
+                background-color: #ffffff;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+
+                h1 {
+                    font-size: 18px;
+                    font-family: 'roboto', sans-serif;
+                    font-weight: bold;
+                    margin-left: 15px;
+                    margin-bottom: 5px;
+                    padding-top: 15px;
+                }
+
+                p {
+                    font-family: 'roboto', sans-serif;
+                    margin-left: 15px;
+                    font-size: 18px;
+                }
+
+                .far {
+                    position: relative;
+                    bottom: 40px;
+                    left: 85%;
+
+                    &:hover {
+                        font-weight: bold;
+                        background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}

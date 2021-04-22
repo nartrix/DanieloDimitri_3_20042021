@@ -2,15 +2,24 @@
 
 .section-location {
     width: 100%;
+    background-color: #EAEAEA;
 
     .content-location {
         width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
 
         .fas {
             margin-right: 15px;
+            font-size: 20px;
+        }
+
+        p {
+            font-family: 'roboto', sans-serif;
+            font-size: 18px;
         }
     }
 }

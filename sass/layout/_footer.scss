@@ -1,0 +1,35 @@
+/* FOOTER */
+
+footer {
+    background-color: #353535;
+    color: #ffffff;
+    padding: 20px;
+
+    h1 {
+        font-family: 'Shrikhand-regular';
+        font-style: italic;
+        letter-spacing: -1px;
+        font-weight: 900;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+
+        .footer-item {
+            display: inline-flex;
+            margin-bottom: 10px;
+            font-family: 'roboto', sans-serif;
+
+            .fas {
+                margin-right: 10px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
