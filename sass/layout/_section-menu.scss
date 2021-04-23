@@ -1,0 +1,76 @@
+/* SECTION MENU */
+
+.section-menu {
+    width: 100%;
+    position: relative;
+    bottom: 40px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 40px;
+    
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+         
+    .far {
+        position: relative;
+        left: 80%;
+        bottom: 30px;
+
+        &:hover {
+            font-weight: bold;
+            background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .appetizer {
+        margin-bottom: 40px;
+        
+        h1 {
+            font-size: 18px;
+            font-family: 'roboto', sans-serif;
+            font-style: initial;
+        }
+
+        .appetizer-content {
+            width: 100%;
+        }
+    }
+
+    .dishes {
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 18px;
+            font-family: 'roboto', sans-serif;
+            font-style: initial;
+        }
+    }
+
+    .desserts {
+        margin-bottom: 40px;
+
+        h1 {
+            font-size: 18px;
+            font-family: 'roboto', sans-serif;
+            font-style: initial;
+        }
+    }
+
+    .order {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 40px;
+
+        .btn {
+            width: 40%;
+            font-family: 'roboto', sans-serif;
+        }
+    }
+}
