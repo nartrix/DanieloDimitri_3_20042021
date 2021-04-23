@@ -1,0 +1,28 @@
+/* CARD MENU */
+
+.card-menu {
+    background-color: #ffffff;
+    border-radius: 25px;
+    margin: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    h1 {
+        font-family: 'roboto', sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-family: 'roboto', sans-serif;
+        margin-left: 15px;
+    }
+
+    span {
+        position: relative;
+        float: right;
+        margin-right: 20px;
+        font-weight: bold;
+    }
+}

@@ -25,6 +25,7 @@
 
         .restaurant-card {    
             margin-bottom: 20px;
+            text-decoration: none;
 
             .card-img {
                 
@@ -50,18 +51,21 @@
                     margin-left: 15px;
                     margin-bottom: 5px;
                     padding-top: 15px;
+                    color: #000000;
                 }
 
                 p {
                     font-family: 'roboto', sans-serif;
                     margin-left: 15px;
                     font-size: 18px;
+                    color: #000000;
                 }
 
                 .far {
                     position: relative;
                     bottom: 40px;
                     left: 85%;
+                    color: #000000;
 
                     &:hover {
                         font-weight: bold;
