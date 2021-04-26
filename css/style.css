@@ -135,6 +135,7 @@ header {
     display: inline-flex;
     align-content: center;
     background-color: #f6f6f6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
     border-radius: 20px;
     padding: 20px 10px 20px 10px;
     margin-bottom: 20px;
@@ -188,12 +189,27 @@ header {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px; }
+  .section-restaurant .restaurant-card .news {
+    position: relative;
+    top: 60px;
+    float: right;
+    margin-right: 15px;
+    margin-top: -50px;
+    background-color: #99E2D0;
+    width: 20%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    color: #278870; }
 
 /* SECTION MENU */
 .section-menu {
   width: 100%;
   position: relative;
   bottom: 40px;
+  margin-bottom: -40px;
   background-color: #f6f6f6;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -268,9 +284,11 @@ footer {
 .btn {
   background: #9356dc;
   background: linear-gradient(356deg, #9356dc 27%, #ff79da 84%);
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 20px 0px;
   border-radius: 50px;
   padding: 20px;
   text-align: center;
+  text-decoration: none;
   color: #ffffff;
   font-size: 15px;
   font-weight: bold; }
@@ -278,6 +296,7 @@ footer {
 /* CARD MENU */
 .card-menu {
   background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
   border-radius: 25px;
   margin: 15px;
   padding-top: 20px;
@@ -309,6 +328,7 @@ footer {
   .restaurant-card .card-content {
     height: 70px;
     background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 2px 20px 2px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
     .restaurant-card .card-content h1 {

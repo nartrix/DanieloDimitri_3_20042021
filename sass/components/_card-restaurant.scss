@@ -3,6 +3,7 @@
 .restaurant-card {    
     margin-bottom: 20px;
     text-decoration: none;
+    
 
     .card-img {
         
@@ -18,6 +19,7 @@
     .card-content {
         height: 70px;
         background-color: #ffffff;
+        box-shadow: rgba(100, 100, 111, 0.3) 0px 2px 20px 2px;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
 
