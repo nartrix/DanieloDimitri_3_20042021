@@ -229,24 +229,33 @@ header {
       -webkit-text-fill-color: transparent; }
   .section-menu .appetizer {
     margin-bottom: 40px; }
-    .section-menu .appetizer h1 {
+    .section-menu .appetizer .title-menu h1 {
       font-size: 18px;
       font-family: 'roboto', sans-serif;
-      font-style: initial; }
+      font-style: initial;
+      border-bottom: #99E2D0 5px solid;
+      width: 55px;
+      padding-bottom: 10px; }
     .section-menu .appetizer .appetizer-content {
       width: 100%; }
   .section-menu .dishes {
     margin-bottom: 40px; }
-    .section-menu .dishes h1 {
+    .section-menu .dishes .title-menu h1 {
       font-size: 18px;
       font-family: 'roboto', sans-serif;
-      font-style: initial; }
+      font-style: initial;
+      border-bottom: #99E2D0 5px solid;
+      width: 55px;
+      padding-bottom: 10px; }
   .section-menu .desserts {
     margin-bottom: 40px; }
-    .section-menu .desserts h1 {
+    .section-menu .desserts .title-menu h1 {
       font-size: 18px;
       font-family: 'roboto', sans-serif;
-      font-style: initial; }
+      font-style: initial;
+      border-bottom: #99E2D0 5px solid;
+      width: 55px;
+      padding-bottom: 10px; }
   .section-menu .order {
     display: flex;
     width: 100%;
@@ -291,7 +300,10 @@ footer {
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
-  font-weight: bold; }
+  font-weight: bold;
+  transition: all .4s ease-in-out; }
+  .btn:hover {
+    transform: scale(1.1); }
 
 /* CARD MENU */
 .card-menu {
@@ -302,6 +314,7 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px; }
   .card-menu h1 {
+    font-size: 18px;
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     margin-left: 15px;
@@ -319,12 +332,14 @@ footer {
 .restaurant-card {
   margin-bottom: 20px;
   text-decoration: none; }
-  .restaurant-card .card-img img {
-    width: 100%;
-    height: 225px;
-    object-fit: cover;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; }
+  .restaurant-card .card-img {
+    height: 230px; }
+    .restaurant-card .card-img img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
   .restaurant-card .card-content {
     height: 70px;
     background-color: #ffffff;
