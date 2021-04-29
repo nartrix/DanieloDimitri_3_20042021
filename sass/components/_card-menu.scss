@@ -13,7 +13,7 @@
         padding: 20px 15px 20px 15px;
 
         h1 {
-            font-size: 18px;
+            font-size: 16px;
             font-family: 'roboto', sans-serif;
             font-weight: bold;
             margin-left: 0px;
@@ -23,11 +23,15 @@
         .card-item {
             width: 100%;
             display: inline-flex;
+            justify-content: space-between;
 
             p {
-                width: 100%;
+                width: 255px;
+                font-size: 14px;
                 font-family: 'roboto', sans-serif;
-                
+                white-space:nowrap;
+                overflow:hidden;
+                text-overflow:ellipsis;
             }
         
             span {
@@ -42,28 +46,23 @@
     }
 
     &:hover {
-        width: 90%;
+
         .card-content {
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
 
             .card-item {
-                width: 275px;
-
                 p {
-                    white-space:nowrap;
-                    overflow:hidden;
-                    text-overflow:ellipsis;
+                  width: 210px;  
                 }
-            }
-            
+            } 
         }
 
         .validate {
             background-color: #99E2D0;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
-            padding: 15px 25px 15px 25px;
+            padding: 0px 20px 0px 20px;
             display: flex;
             align-items: center;
             justify-content: center;
