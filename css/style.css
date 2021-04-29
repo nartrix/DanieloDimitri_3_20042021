@@ -336,45 +336,44 @@ footer {
     border-radius: 25px;
     padding: 20px 15px 20px 15px; }
     .card-menu .card-content h1 {
-      font-size: 18px;
+      font-size: 16px;
       font-family: 'roboto', sans-serif;
       font-weight: bold;
       margin-left: 0px;
       margin-bottom: 5px; }
     .card-menu .card-content .card-item {
       width: 100%;
-      display: inline-flex; }
+      display: inline-flex;
+      justify-content: space-between; }
       .card-menu .card-content .card-item p {
-        width: 100%;
-        font-family: 'roboto', sans-serif; }
+        width: 255px;
+        font-size: 14px;
+        font-family: 'roboto', sans-serif;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
       .card-menu .card-content .card-item span {
         font-family: 'roboto', sans-serif;
         font-weight: bold; }
   .card-menu .validate {
     display: none; }
-  .card-menu:hover {
-    width: 90%; }
-    .card-menu:hover .card-content {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
-      .card-menu:hover .card-content .card-item {
-        width: 275px; }
-        .card-menu:hover .card-content .card-item p {
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-    .card-menu:hover .validate {
-      background-color: #99E2D0;
-      border-top-right-radius: 25px;
-      border-bottom-right-radius: 25px;
-      padding: 15px 25px 15px 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .card-menu:hover .validate .fas {
-        position: initial;
-        color: #ffffff;
-        font-size: 25px; }
+  .card-menu:hover .card-content {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+    .card-menu:hover .card-content .card-item p {
+      width: 210px; }
+  .card-menu:hover .validate {
+    background-color: #99E2D0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .card-menu:hover .validate .fas {
+      position: initial;
+      color: #ffffff;
+      font-size: 25px; }
 
 /* CARD RESTAURANT */
 .restaurant-card {
