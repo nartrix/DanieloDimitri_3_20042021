@@ -229,33 +229,52 @@ header {
       -webkit-text-fill-color: transparent; }
   .section-menu .appetizer {
     margin-bottom: 40px; }
-    .section-menu .appetizer .title-menu h1 {
-      font-size: 18px;
-      font-family: 'roboto', sans-serif;
-      font-style: initial;
-      border-bottom: #99E2D0 5px solid;
-      width: 55px;
-      padding-bottom: 10px; }
+    .section-menu .appetizer .title-menu {
+      margin-bottom: 20px; }
+      .section-menu .appetizer .title-menu h1 {
+        font-size: 18px;
+        font-family: 'roboto', sans-serif;
+        font-style: initial;
+        border-bottom: #99E2D0 5px solid;
+        width: 55px;
+        padding-bottom: 10px; }
     .section-menu .appetizer .appetizer-content {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .section-menu .dishes {
     margin-bottom: 40px; }
-    .section-menu .dishes .title-menu h1 {
-      font-size: 18px;
-      font-family: 'roboto', sans-serif;
-      font-style: initial;
-      border-bottom: #99E2D0 5px solid;
-      width: 55px;
-      padding-bottom: 10px; }
+    .section-menu .dishes .title-menu {
+      margin-bottom: 20px; }
+      .section-menu .dishes .title-menu h1 {
+        font-size: 18px;
+        font-family: 'roboto', sans-serif;
+        font-style: initial;
+        border-bottom: #99E2D0 5px solid;
+        width: 55px;
+        padding-bottom: 10px; }
+    .section-menu .dishes .dishes-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .section-menu .desserts {
     margin-bottom: 40px; }
-    .section-menu .desserts .title-menu h1 {
-      font-size: 18px;
-      font-family: 'roboto', sans-serif;
-      font-style: initial;
-      border-bottom: #99E2D0 5px solid;
-      width: 55px;
-      padding-bottom: 10px; }
+    .section-menu .desserts .title-menu {
+      margin-bottom: 20px; }
+      .section-menu .desserts .title-menu h1 {
+        font-size: 18px;
+        font-family: 'roboto', sans-serif;
+        font-style: initial;
+        border-bottom: #99E2D0 5px solid;
+        width: 55px;
+        padding-bottom: 10px; }
+    .section-menu .desserts .desserts-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .section-menu .order {
     display: flex;
     width: 100%;
@@ -307,26 +326,55 @@ footer {
 
 /* CARD MENU */
 .card-menu {
-  background-color: #ffffff;
-  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
-  border-radius: 25px;
-  margin: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .card-menu h1 {
-    font-size: 18px;
-    font-family: 'roboto', sans-serif;
-    font-weight: bold;
-    margin-left: 15px;
-    margin-bottom: 5px; }
-  .card-menu p {
-    font-family: 'roboto', sans-serif;
-    margin-left: 15px; }
-  .card-menu span {
-    position: relative;
-    float: right;
-    margin-right: 20px;
-    font-weight: bold; }
+  width: 90%;
+  display: inline-flex;
+  margin-bottom: 20px; }
+  .card-menu .card-content {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
+    border-radius: 25px;
+    padding: 20px 15px 20px 15px; }
+    .card-menu .card-content h1 {
+      font-size: 18px;
+      font-family: 'roboto', sans-serif;
+      font-weight: bold;
+      margin-left: 0px;
+      margin-bottom: 5px; }
+    .card-menu .card-content .card-item {
+      width: 100%;
+      display: inline-flex; }
+      .card-menu .card-content .card-item p {
+        width: 100%;
+        font-family: 'roboto', sans-serif; }
+      .card-menu .card-content .card-item span {
+        font-family: 'roboto', sans-serif;
+        font-weight: bold; }
+  .card-menu .validate {
+    display: none; }
+  .card-menu:hover {
+    width: 90%; }
+    .card-menu:hover .card-content {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0; }
+      .card-menu:hover .card-content .card-item {
+        width: 275px; }
+        .card-menu:hover .card-content .card-item p {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+    .card-menu:hover .validate {
+      background-color: #99E2D0;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      padding: 15px 25px 15px 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .card-menu:hover .validate .fas {
+        position: initial;
+        color: #ffffff;
+        font-size: 25px; }
 
 /* CARD RESTAURANT */
 .restaurant-card {
