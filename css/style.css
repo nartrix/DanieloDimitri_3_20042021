@@ -220,7 +220,7 @@ header {
     margin-left: 20px; }
   .section-menu .far {
     position: relative;
-    left: 80%;
+    left: 85%;
     bottom: 30px; }
     .section-menu .far:hover {
       font-weight: bold;
@@ -243,6 +243,12 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      .section-menu .appetizer .appetizer-content:nth-child(1) {
+        animation-delay: 200ms; }
+      .section-menu .appetizer .appetizer-content:nth-child(2) {
+        animation-delay: 400ms; }
+      .section-menu .appetizer .appetizer-content:nth-child(3) {
+        animation-delay: 600ms; }
   .section-menu .dishes {
     margin-bottom: 40px; }
     .section-menu .dishes .title-menu {
@@ -325,55 +331,79 @@ footer {
     transform: scale(1.1); }
 
 /* CARD MENU */
+@keyframes menu {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0; } }
 .card-menu {
   width: 90%;
   display: inline-flex;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  animation: menu 900ms both; }
+  .card-menu.action1 {
+    animation-delay: 300ms; }
+  .card-menu.action2 {
+    animation-delay: 600ms; }
+  .card-menu.action3 {
+    animation-delay: 900ms; }
   .card-menu .card-content {
     width: 100%;
     background-color: #ffffff;
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 20px 0px;
     border-radius: 25px;
-    padding: 20px 15px 20px 15px; }
-    .card-menu .card-content h1 {
-      font-size: 16px;
-      font-family: 'roboto', sans-serif;
-      font-weight: bold;
-      margin-left: 0px;
-      margin-bottom: 5px; }
-    .card-menu .card-content .card-item {
-      width: 100%;
-      display: inline-flex;
-      justify-content: space-between; }
-      .card-menu .card-content .card-item p {
-        width: 255px;
-        font-size: 14px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row; }
+    .card-menu .card-content .card-items {
+      width: 100%; }
+      .card-menu .card-content .card-items h1 {
+        font-size: 16px;
         font-family: 'roboto', sans-serif;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; }
-      .card-menu .card-content .card-item span {
-        font-family: 'roboto', sans-serif;
-        font-weight: bold; }
-  .card-menu .validate {
-    display: none; }
-  .card-menu:hover .card-content {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0; }
-    .card-menu:hover .card-content .card-item p {
-      width: 210px; }
+        font-weight: bold;
+        padding: 20px 15px 5px 0px; }
+      .card-menu .card-content .card-items .card-item {
+        width: 90%;
+        display: flex;
+        justify-content: space-between; }
+        .card-menu .card-content .card-items .card-item p {
+          font-size: 14px;
+          font-family: 'roboto', sans-serif;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding: 0px 0px 15px 20px;
+          transition: width 2s; }
+        .card-menu .card-content .card-items .card-item span {
+          font-family: 'roboto', sans-serif;
+          font-weight: bold; }
+    .card-menu .card-content .validate {
+      display: none; }
+  .card-menu:hover .card-content .card-item p {
+    width: 150px; }
+@keyframes validate {
+  0% {
+    transform: translateX(110px); } }
   .card-menu:hover .validate {
+    width: 10%;
     background-color: #99E2D0;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 0px 20px 0px 20px;
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    animation: validate 600ms; }
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg); }
+  100% {
+    transform: rotate(0deg); } }
     .card-menu:hover .validate .fas {
       position: initial;
       color: #ffffff;
-      font-size: 25px; }
+      font-size: 25px;
+      animation: rotate 500ms;
+      animation-delay: 400ms; }
 
 /* CARD RESTAURANT */
 .restaurant-card {
