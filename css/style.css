@@ -45,6 +45,42 @@ table {
 @font-face {
   font-family: Shrikhand;
   src: url(/fonts/Shrikhand-Regular.ttf); }
+/* OVERLAY */
+@keyframes overlay {
+  0% {
+    opacity: 1;
+    z-index: 2; }
+  75% {
+    opacity: 1;
+    z-index: 2; }
+  100% {
+    opacity: 0; } }
+#overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: overlay 3s; }
+@keyframes loading {
+  75% {
+    border-top-color: #ff79da; }
+  100% {
+    transform: rotate(360deg); } }
+  #overlay .loader {
+    width: 64px;
+    height: 64px;
+    border: 20px solid #f6f6f6;
+    border-top: 20px solid #9356DC;
+    border-radius: 50%;
+    animation: loading 1000ms linear infinite; }
+
 /* HEADER */
 header {
   display: flex; }
@@ -196,7 +232,6 @@ header {
     margin-right: 15px;
     margin-top: -50px;
     background-color: #99E2D0;
-    width: 20%;
     text-align: center;
     text-decoration: none;
     font-family: 'roboto', sans-serif;
@@ -230,8 +265,9 @@ header {
   .section-menu .appetizer {
     margin-bottom: 40px; }
     .section-menu .appetizer .title-menu {
-      margin-bottom: 20px; }
-      .section-menu .appetizer .title-menu h1 {
+      margin-bottom: 20px;
+      margin-left: 20px; }
+      .section-menu .appetizer .title-menu h2 {
         font-size: 18px;
         font-family: 'roboto', sans-serif;
         font-style: initial;
@@ -252,8 +288,9 @@ header {
   .section-menu .dishes {
     margin-bottom: 40px; }
     .section-menu .dishes .title-menu {
-      margin-bottom: 20px; }
-      .section-menu .dishes .title-menu h1 {
+      margin-bottom: 20px;
+      margin-left: 20px; }
+      .section-menu .dishes .title-menu h2 {
         font-size: 18px;
         font-family: 'roboto', sans-serif;
         font-style: initial;
@@ -268,8 +305,9 @@ header {
   .section-menu .desserts {
     margin-bottom: 40px; }
     .section-menu .desserts .title-menu {
-      margin-bottom: 20px; }
-      .section-menu .desserts .title-menu h1 {
+      margin-bottom: 20px;
+      margin-left: 20px; }
+      .section-menu .desserts .title-menu h2 {
         font-size: 18px;
         font-family: 'roboto', sans-serif;
         font-style: initial;
@@ -356,13 +394,13 @@ footer {
     flex-direction: row; }
     .card-menu .card-content .card-items {
       width: 100%; }
-      .card-menu .card-content .card-items h1 {
+      .card-menu .card-content .card-items h3 {
         font-size: 16px;
         font-family: 'roboto', sans-serif;
         font-weight: bold;
-        padding: 20px 15px 5px 0px; }
+        padding: 20px 15px 5px 20px; }
       .card-menu .card-content .card-items .card-item {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-between; }
         .card-menu .card-content .card-items .card-item p {
@@ -375,7 +413,8 @@ footer {
           transition: width 2s; }
         .card-menu .card-content .card-items .card-item span {
           font-family: 'roboto', sans-serif;
-          font-weight: bold; }
+          font-weight: bold;
+          padding-right: 20px; }
     .card-menu .card-content .validate {
       display: none; }
   .card-menu:hover .card-content .card-item p {
@@ -439,7 +478,7 @@ footer {
     .restaurant-card .card-content .far {
       position: relative;
       bottom: 40px;
-      left: 85%;
+      left: 80%;
       color: #000000; }
       .restaurant-card .card-content .far:hover {
         font-weight: bold;
