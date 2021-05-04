@@ -81,6 +81,10 @@
                 
                 p { 
                     width: 150px;
+
+                    @include breakpoint(desktop) {
+                        width: 90%;
+                    }
                 }
             } 
         }
@@ -101,6 +105,10 @@
             align-items: center;
             justify-content: center;
             animation: validate 600ms;
+
+            @include breakpoint(desktop) {
+                width: 5%;
+            }
 
             @keyframes rotate {
                 0% {

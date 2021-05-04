@@ -5,6 +5,14 @@ footer {
     color: #ffffff;
     padding: 20px;
 
+    @include breakpoint(desktop) {
+        padding-left: 40px;
+    }
+
+    @include breakpoint(tablet) {
+        padding-left: 40px;
+    }
+
     h1 {
         font-family: 'Shrikhand-regular';
         font-style: italic;
