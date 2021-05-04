@@ -1,6 +1,10 @@
 @import 'base/reset';
 @import 'base/typography.scss';
 
+@import 'utilities/function';
+@import 'utilities/mixins';
+@import 'utilities/variables';
+
 @import 'layout/overlay';
 @import 'layout/header';
 @import 'layout/section-location';
@@ -14,6 +18,3 @@
 @import 'components/card-menu';
 @import 'components/card-restaurant';
 
-@import 'utilities/function';
-@import 'utilities/mixins';
-@import 'utilities/variables';

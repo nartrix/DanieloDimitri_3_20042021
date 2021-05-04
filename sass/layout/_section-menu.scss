@@ -14,6 +14,14 @@
         font-family: 'Shrikhand', cursive;
         font-size: 30px;
         margin-left: 20px;
+
+        @include breakpoint(desktop) {
+            margin-left: 40px;
+        }
+
+        @include breakpoint(tablet) {
+            margin-left: 40px;
+        }
     }
          
     .far {
@@ -21,6 +29,14 @@
         left: 85%;
         bottom: 30px;
 
+        @include breakpoint(tablet) {
+            left: 88%;
+        }
+
+        @include breakpoint(desktop) {
+            left: 92%;
+        }
+        
         &:hover {
             font-weight: bold;
             background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
@@ -35,6 +51,14 @@
         .title-menu {
             margin-bottom: 20px;
             margin-left: 20px;
+
+            @include breakpoint(desktop) {
+                margin-left: 40px;
+            }
+
+            @include breakpoint(tablet) {
+                margin-left: 40px;
+            }
 
             h2 {
                 font-size: 18px;
@@ -74,6 +98,14 @@
         .title-menu {
             margin-bottom: 20px;
             margin-left: 20px;
+
+            @include breakpoint(desktop) {
+                margin-left: 40px;
+            }
+
+            @include breakpoint(tablet) {
+                margin-left: 40px;
+            }
             
             h2 {
                 font-size: 18px;
@@ -99,6 +131,14 @@
         .title-menu {
             margin-bottom: 20px;
             margin-left: 20px;
+
+            @include breakpoint(desktop) {
+                margin-left: 40px;
+            }
+
+            @include breakpoint(tablet) {
+                margin-left: 40px;
+            }
 
             h2 {
                 font-size: 18px;
