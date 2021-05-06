@@ -54,7 +54,7 @@
                     font-size: 14px;
                     font-family: 'roboto', sans-serif;
                     white-space:nowrap;
-                    overflow:hidden;
+                    overflow: hidden;
                     text-overflow:ellipsis;
                     padding: 0px 0px 15px 20px;
                     transition: width 2s;
@@ -75,23 +75,17 @@
 
 
     &:hover {
-
         .card-content {
             .card-item {
-                
                 p { 
                     width: 150px;
-
-                    @include breakpoint(desktop) {
-                        width: 90%;
-                    }
                 }
             } 
         }
 
         @keyframes validate {
             0% {
-                transform: translateX(110px);
+                transform: translateX(90px);
             }
         }
 

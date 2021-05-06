@@ -271,14 +271,16 @@ header {
   padding-top: 40px; }
   .section-menu h1 {
     font-family: 'Shrikhand', cursive;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 20px; }
     @media (min-width: 1200px) {
       .section-menu h1 {
-        margin-left: 40px; } }
+        margin-left: 40px;
+        font-size: 30px; } }
     @media (min-width: 760px) {
       .section-menu h1 {
-        margin-left: 40px; } }
+        margin-left: 40px;
+        font-size: 28px; } }
   .section-menu .far {
     position: relative;
     left: 85%;
@@ -475,12 +477,9 @@ footer {
       display: none; }
   .card-menu:hover .card-content .card-item p {
     width: 150px; }
-    @media (min-width: 1200px) {
-      .card-menu:hover .card-content .card-item p {
-        width: 90%; } }
 @keyframes validate {
   0% {
-    transform: translateX(110px); } }
+    transform: translateX(90px); } }
   .card-menu:hover .validate {
     width: 10%;
     background-color: #99E2D0;
