@@ -76,51 +76,65 @@
 
     &:hover {
         .card-content {
-            .card-item {
-                p { 
-                    width: 150px;
+            .card-items {
+                width: 90%;
+
+                @include breakpoint(tablet) {
+                    width: 92%;
                 }
-            } 
-        }
 
-        @keyframes validate {
-            0% {
-                transform: translateX(90px);
-            }
-        }
+                @include breakpoint(desktop) {
+                    width: 95%;
+                }
 
-        .validate {
-            width: 10%;
-            background-color: #99E2D0;
-            border-top-right-radius: 25px;
-            border-bottom-right-radius: 25px;
-            padding: 0px 20px 0px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: validate 600ms;
-
-            @include breakpoint(desktop) {
-                width: 5%;
+                p {
+                    width: 110px;
+                }
             }
 
-            @keyframes rotate {
+            @keyframes validate {
                 0% {
-                    transform: rotate(360deg);
-                }
-
-                100% {
-                    transform: rotate(0deg);
+                    transform: translateX(80px);
                 }
             }
-            
-            .fas {
-                position: initial;
-                color: #ffffff;
-                font-size: 25px;
-                animation: rotate 500ms;
-                animation-delay: 400ms;
+    
+            .validate {
+                width: 10%;
+                background-color: #99E2D0;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                padding: 0px 20px 0px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                animation: validate 600ms;
+
+                @include breakpoint(tablet) {
+                    width: 8%;
+                }
+
+                @include breakpoint(desktop) {
+                    width: 5%;
+                }
+    
+                @keyframes rotate {
+                    0% {
+                        transform: rotate(360deg);
+                    }
+    
+                    100% {
+                        transform: rotate(0deg);
+                    }
+                }
                 
+                .fas {
+                    position: initial;
+                    color: #ffffff;
+                    font-size: 25px;
+                    animation: rotate 500ms;
+                    animation-delay: 400ms;
+                    
+                }
             }
         } 
     }  
