@@ -1,3 +1,4 @@
+/* BASE */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,12 +42,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* TYPOGRAPHY */
-@font-face {
-  font-family: Shrikhand;
-  src: url(/fonts/Shrikhand-Regular.ttf); }
 /* MIXINS */
 /* COLOR */
+/* LAYOUT */
 /* OVERLAY */
 @keyframes overlay {
   0% {
@@ -165,7 +163,7 @@ header {
 .section-operation {
   width: 100%;
   padding-top: 30px; }
-  .section-operation h1 {
+  .section-operation h2 {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -223,7 +221,7 @@ header {
   margin-top: 20px;
   padding-bottom: 20px;
   padding-top: 40px; }
-  .section-restaurant h1 {
+  .section-restaurant h2 {
     font-family: 'roboto', sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -391,12 +389,9 @@ footer {
   @media (min-width: 760px) {
     footer {
       padding-left: 40px; } }
-  footer h1 {
-    font-family: 'Shrikhand-regular';
-    font-style: italic;
-    letter-spacing: -1px;
-    font-weight: 900;
-    font-size: 25px;
+  footer h4 {
+    font-family: 'Shrikhand';
+    font-size: 24px;
     padding-bottom: 20px; }
   footer .footer-content {
     display: flex;
@@ -410,6 +405,7 @@ footer {
       footer .footer-content .footer-item p {
         font-size: 18px; }
 
+/* COMPONENTS */
 /* BUTTONS */
 .btn {
   background: #9356dc;
@@ -534,7 +530,7 @@ footer {
     box-shadow: rgba(100, 100, 111, 0.3) 0px 2px 20px 2px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px; }
-    .restaurant-card .card-content h1 {
+    .restaurant-card .card-content h3 {
       font-size: 18px;
       font-family: 'roboto', sans-serif;
       font-weight: bold;
